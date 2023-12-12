@@ -1,0 +1,101 @@
+/* styles_noticias.css */
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Estilos para la sección de Noticias */
+#noticias {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#noticias h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+article {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    color: #343a40;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+article time {
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #dee2e6;
+}
+
+article p {
+    line-height: 1.6;
+    padding: 15px;
+    margin: 0;
+}
+
+article a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+article a:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Consulta de Medios para Dispositivos Móviles */
+@media only screen and (max-width: 600px) {
+    article h3 {
+        padding: 10px;
+    }
+
+    article time {
+        font-size: 0.8em; 
+    }
+
+    article p {
+        padding: 10px; 
+    }
+
+    article a {
+        padding: 8px 12px; 
+    }
+}

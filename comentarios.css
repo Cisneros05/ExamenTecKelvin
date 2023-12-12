@@ -1,0 +1,79 @@
+/* styles_comentarios.css */
+
+/* Estilos para la sección de Comentarios */
+#comentarios {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#comentarios h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#comentarios-lista {
+    margin-bottom: 20px;
+}
+
+.comentario {
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px;
+}
+
+.comentario p {
+    margin: 0;
+}
+
+#formulario-comentario {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#formulario-comentario label {
+    margin-bottom: 5px;
+    color: #343a40;
+}
+
+#formulario-comentario input,
+#formulario-comentario textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+#formulario-comentario button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#formulario-comentario button:hover {
+    background-color: #0056b3;
+}
+
+/* Consulta de Medios para Dispositivos Móviles */
+@media only screen and (max-width: 600px) {
+    #formulario-comentario {
+        max-width: 100%; 
+    }
+
+    #formulario-comentario input,
+    #formulario-comentario textarea {
+        margin-bottom: 10px; 
+    }
+
+    #formulario-comentario button {
+        padding: 8px; 
+    }
+}

@@ -1,0 +1,163 @@
+/* principal.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.redes-sociales a {
+    margin-right: 10px;
+}
+
+.redes-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+.liga-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #343a40;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 40px;
+    align-items: center; 
+}
+
+nav li {
+    flex-grow: 1;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 0px;
+    background-color: #343a40;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Consultas de Medios para Dispositivos Móviles */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        height: auto;
+        text-align: center; 
+    }
+
+    nav li {
+        flex-grow: 1;
+        margin-bottom: 5px;
+    }
+
+    nav a {
+        padding: 8px; 
+        font-size: 14px; 
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    .redes-sociales {
+        justify-content: center; 
+    }
+
+    .section {
+        width: 90%; 
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 10px 0; 
+    }
+
+    nav ul {
+        height: auto; 
+    }
+}
+
